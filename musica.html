@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meu Espaço Seguro — Babi Noli</title>
+<meta name="description" content="Primeira música de Babi Noli, 16 de outubro de 2026.">
+<meta name="theme-color" content="#EAC8A2">
+<meta property="og:title" content="Meu Espaço Seguro — Babi Noli">
+<meta property="og:description" content="Primeira música de Babi Noli, 16 de outubro de 2026.">
+<meta property="og:image" content="https://babinoli.com/img/capa.jpg">
+<link rel="icon" href="img/coracao.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+<main class="pagina">
+<header class="topo"><a href="index.html" aria-label="Início"><img class="logo" src="img/logo.png" alt="Babi Noli"></a><a class="voltar" href="index.html">Início</a></header><article class="conteudo">
+  <h1>Meu Espaço Seguro</h1>
+  <p class="sub" id="data">Primeira música, 16 de outubro de 2026</p>
+  <img class="capa" src="img/capa.jpg" alt="Capa de Meu Espaço Seguro" width="900" height="900">
+  <p><a class="botao" id="botao" href="#" aria-disabled="true">Pré-save em breve</a></p>
+  <p>Letra autoral. Música e voz feitas com IA. <a href="ia.html">Saiba como</a>.</p>
+</article>
+<script>
+/* ===== Só é preciso mexer aqui ===== */
+const CONFIG = {
+  linkHyperFollow: "",            // cole aqui o link do HyperFollow (DistroKid)
+  lancamento: "2026-10-16T00:00:00+02:00"
+};
+/* =================================== */
+(function(){
+  const b=document.getElementById("botao"), saiu=new Date()>=new Date(CONFIG.lancamento);
+  if(saiu) document.getElementById("data").textContent="Primeira música, já disponível";
+  if(CONFIG.linkHyperFollow){ b.href=CONFIG.linkHyperFollow; b.removeAttribute("aria-disabled"); b.target="_blank"; b.rel="noopener"; b.textContent=saiu?"Ouvir agora":"Fazer pré-save"; }
+  else b.addEventListener("click",e=>e.preventDefault());
+})();
+</script>
+<footer><span>© 2026 Babi Noli</span><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></footer>
+</main>
+</body>
+</html>
