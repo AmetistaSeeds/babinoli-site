@@ -1,0 +1,57 @@
+:root{--fundo:#F4EAD2;--verde:#5E6B3F;--urucum:#B4441A;--marrom:#241713;--marrom-suave:#5a4a42}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--fundo);color:var(--marrom);font-family:Poppins,system-ui,sans-serif;padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%;height:auto}
+.topo{max-width:960px;margin:0 auto;padding:calc(22px + env(safe-area-inset-top,0px)) 24px 22px;display:flex;justify-content:space-between;align-items:center}
+.topo .logo img{width:118px;display:block}
+.topo nav a{color:var(--marrom-suave);font-size:.85rem}
+.grafismo{height:24px;background:url(img/faixa-grafismo.png) repeat-x center/auto 24px}
+.folhas{height:110px;background:url(img/faixa-folhas.png) repeat-x center/auto 110px}
+/* capa */
+.capa{text-align:center;padding:48px 20px 0}
+.capa .titulo{width:min(560px,86vw)}
+.capa h1{font-family:Lora,Georgia,serif;font-weight:400;font-size:1.3rem;color:var(--verde);margin-top:14px}
+.capa .roda{width:min(820px,94vw);margin:34px auto 0;display:block}
+.botoes{display:flex;gap:14px;justify-content:center;margin:34px 0 40px;flex-wrap:wrap}
+.botao{font-size:.95rem;padding:12px 22px;border-radius:999px;text-decoration:none;background:var(--urucum);color:#fff}
+.botao:focus-visible,a:focus-visible{outline:3px solid var(--marrom);outline-offset:3px}
+.lendas{max-width:960px;margin:0 auto;padding:56px 24px 70px}
+.lendas h2{font-family:Lora,Georgia,serif;font-weight:600;font-size:1.8rem}
+.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px}
+.cartao{color:inherit;text-decoration:none;display:block}
+.cartao img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;display:block;transition:transform .3s ease}
+.cartao:hover img{transform:translateY(-3px)}
+.cartao h3{font-family:Lora,Georgia,serif;font-weight:600;font-size:1.2rem;margin-top:12px}
+/* página da lenda */
+main.lenda{max-width:960px;margin:0 auto;padding:44px 24px 40px}
+main.lenda h1{font-family:Lora,Georgia,serif;font-weight:600;font-size:2.4rem}
+.ilustra{width:100%;border-radius:12px;margin-top:24px;display:block}
+.corpo{display:grid;grid-template-columns:150px 1fr;gap:28px;margin-top:40px;align-items:start}
+.guia{height:170px;width:auto;position:sticky;top:24px;justify-self:center}
+.texto{max-width:62ch}
+.texto p{font-family:Lora,Georgia,serif;font-size:1.08rem;line-height:1.75;margin-bottom:1.1em}
+.curiosidades{margin-top:2em;background:rgba(94,107,63,.09);border-left:3px solid var(--verde);border-radius:6px;padding:22px 24px}
+.curiosidades h2{font-family:Lora,Georgia,serif;font-weight:600;font-size:1.25rem;color:var(--verde);margin-bottom:12px}
+.curiosidades p,.curiosidades li{font-family:Poppins,sans-serif;font-size:.92rem;line-height:1.65}
+.curiosidades p{margin-bottom:.9em}
+.curiosidades ul{margin:0 0 .9em 1.2em;padding:0}
+.curiosidades li{margin-bottom:.5em}
+nav.entre-lendas{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-top:48px;padding-top:28px;border-top:1px solid rgba(36,23,19,.15)}
+nav.entre-lendas a{display:flex;align-items:flex-end;gap:10px;color:var(--marrom);text-decoration:none}
+nav.entre-lendas img{height:100px;width:auto}
+nav.entre-lendas small{display:block;color:var(--marrom-suave);font-size:.78rem}
+nav.entre-lendas strong{font-family:Lora,Georgia,serif;font-size:1.15rem;font-weight:600}
+nav.entre-lendas .proxima{text-align:right}
+footer{max-width:960px;margin:0 auto;padding:10px 24px 40px;font-size:.8rem;color:var(--marrom-suave);display:flex;gap:20px;flex-wrap:wrap}
+footer a{color:var(--marrom-suave)}
+@media (max-width:720px){.grade{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){
+ main.lenda h1{font-size:1.9rem}
+ .corpo{grid-template-columns:1fr;gap:16px}
+ .guia{height:110px;position:static;justify-self:start}
+ nav.entre-lendas img{height:72px}
+ nav.entre-lendas strong{font-size:1rem}
+}
+@media (max-width:460px){.grade{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.cartao img{transition:none}}
