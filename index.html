@@ -1,34 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Babi Noli</title>
 <meta name="description" content="Músicas e conteúdo de presença e consciência. Letras autorais; música e voz feitas com IA.">
-<meta name="theme-color" content="#EAC8A2">
+<meta name="theme-color" content="#F4EAD2">
 <meta property="og:title" content="Babi Noli">
 <meta property="og:description" content="Músicas e conteúdo de presença e consciência. Letras autorais; música e voz feitas com IA.">
 <meta property="og:image" content="https://babinoli.com/img/capa.jpg">
 <link rel="icon" href="img/coracao.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="fontes.css">
+<style>
+:root{--creme:#F4EAD2;--areia:#EAC8A2;--vermelho:#9D3D3C;--azul:#1D4C80;--nevoa:#D9D3CB;--marrom:#241713;--marrom-suave:#5a4a42}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+body{background:var(--creme);color:var(--marrom);font-family:Poppins,system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;min-height:100%;padding:clamp(28px,6vh,64px) 20px 28px}
+header{text-align:center}
+header img{width:min(300px,70vw);height:auto;display:block;margin:0 auto}
+header p{font-family:Lora,Georgia,serif;font-style:italic;font-size:1.15rem;margin-top:18px;color:var(--marrom-suave)}
+nav{display:grid;grid-template-columns:repeat(3,minmax(0,220px));gap:clamp(24px,5vw,64px);margin-top:clamp(32px,6vh,52px);width:100%;justify-content:center;flex:1;align-content:start}
+.caminho{text-decoration:none;color:inherit;display:flex;flex-direction:column;align-items:center;text-align:center;outline:none}
+.porta{position:relative;width:100%;aspect-ratio:220/310;perspective:900px}
+.porta svg{position:absolute;inset:0;width:100%;height:auto;overflow:visible}
+.folha{transform-origin:9.1% 50%;transition:transform .6s cubic-bezier(.3,.7,.3,1)}
+.caminho:hover .folha,.caminho:focus-visible .folha{transform:rotateY(38deg)}
+.caminho:focus-visible .porta{outline:3px solid var(--marrom);outline-offset:8px;border-radius:12px}
+.texto h2{font-family:Lora,Georgia,serif;font-weight:600;font-size:1.35rem;margin-top:18px;line-height:1.2}
+.texto p{font-size:.88rem;line-height:1.5;margin-top:8px;color:var(--marrom-suave);max-width:27ch;margin-inline:auto}
+footer{margin-top:48px;font-size:.78rem;display:flex;gap:22px}
+footer a{color:var(--marrom-suave)}
+@media (max-width:620px){
+ nav{grid-template-columns:1fr;gap:28px;max-width:380px}
+ .caminho{flex-direction:row;text-align:left;gap:20px;align-items:center}
+ .porta{width:104px;flex:none}
+ .texto h2{margin-top:0}.texto p{margin-inline:0}
+}
+@media (prefers-reduced-motion:reduce){.folha{transition:none}}
+</style>
 </head>
-<body class="">
-<main class="pagina">
-<header class="abertura">
-  <img class="logo" src="img/logo.png" alt="Babi Noli" width="1157" height="356">
-  <p class="tema">Músicas e conteúdo de presença e consciência</p>
+<body>
+<header>
+  <img src="img/logo.png" alt="Babi Noli" width="1157" height="356">
+  <p>Por onde você quer entrar?</p>
 </header>
-<div class="pauta" aria-hidden="true"></div>
-<nav aria-label="Páginas">
-<ul class="janelas">
-  <li><a class="janela" href="musica.html"><img src="img/capa.jpg" alt=""><span class="rotulo">Meu Espaço Seguro<small>Primeira música, 16 de outubro</small></span></a></li>
-  <li><a class="janela" href="letras.html"><img src="img/letra.png" alt=""><span class="rotulo">Letras</span></a></li>
-  <li><a class="janela" href="redes.html"><img src="img/notas.png" alt=""><span class="rotulo">Redes</span></a></li>
-  <li><a class="janela" href="ia.html"><img src="img/chip.png" alt=""><span class="rotulo">Eu e a IA</span></a></li>
-  <li><a class="janela" href="sobre.html"><img src="img/retrato.jpg" alt=""><span class="rotulo">Sobre</span></a></li>
-</ul>
+<nav>
+  <a class="caminho music" href="music/">
+    <div class="porta">
+      <svg class="dentro" viewBox="0 0 220 330" aria-hidden="true">
+        <path d="M20,292 V110 A90,90 0 0 1 200,110 V292 Z" fill="#EAC8A2"/>
+        <rect x="0" y="298" width="220" height="4" rx="2" fill="var(--areia)"/>
+      </svg>
+      <svg class="folha" viewBox="0 0 220 330" aria-hidden="true">
+        <path d="M20,292 V110 A90,90 0 0 1 200,110 V292 Z" fill="var(--vermelho)"/>
+        <path d="M40,272 V112 A70,70 0 0 1 180,112 V272 Z" fill="none" stroke="rgba(234,200,162,.55)" stroke-width="2.5"/>
+        <g class="macaneta"><circle cx="187" cy="184" r="6.5" fill="var(--areia)" stroke="var(--marrom)" stroke-width="1.4"/><path d="M187,195.6 a2.6,2.6 0 0 1 1.2,4.9 l0.8,4.2 h-4 l0.8,-4.2 a2.6,2.6 0 0 1 1.2,-4.9z" fill="var(--areia)" stroke="var(--marrom)" stroke-width="1"/></g>
+        <image href="porta/coracao.png" x="78.0" y="92" width="64" height="64"/>
+      </svg>
+    </div>
+    <div class="texto"><h2>Babi Noli Music</h2><p>Canções com letras minhas. A primeira sai em 16 de outubro.</p></div>
+  </a>
+  <a class="caminho design" href="design/">
+    <div class="porta">
+      <svg class="dentro" viewBox="0 0 220 330" aria-hidden="true">
+        <path d="M20,292 V110 A90,90 0 0 1 200,110 V292 Z" fill="#DDCAAE"/>
+        <rect x="0" y="298" width="220" height="4" rx="2" fill="var(--areia)"/>
+      </svg>
+      <svg class="folha" viewBox="0 0 220 330" aria-hidden="true">
+        <path d="M20,292 V110 A90,90 0 0 1 200,110 V292 Z" fill="var(--azul)"/>
+        <path d="M40,272 V112 A70,70 0 0 1 180,112 V272 Z" fill="none" stroke="rgba(234,200,162,.55)" stroke-width="2.5"/>
+        <g class="macaneta"><circle cx="187" cy="184" r="6.5" fill="var(--areia)" stroke="var(--marrom)" stroke-width="1.4"/><path d="M187,195.6 a2.6,2.6 0 0 1 1.2,4.9 l0.8,4.2 h-4 l0.8,-4.2 a2.6,2.6 0 0 1 1.2,-4.9z" fill="var(--areia)" stroke="var(--marrom)" stroke-width="1"/></g>
+        <image href="porta/coracao.png" x="78.0" y="92" width="64" height="64"/>
+      </svg>
+    </div>
+    <div class="texto"><h2>Babi Noli Design</h2><p>Ilustração, papelaria e a série Liebe Amazônia.</p></div>
+  </a>
+  <a class="caminho sobre" href="sobre/">
+    <div class="porta">
+      <svg class="dentro" viewBox="0 0 220 330" aria-hidden="true">
+        <path d="M20,292 V110 A90,90 0 0 1 200,110 V292 Z" fill="#FBF6EC"/>
+        <rect x="0" y="298" width="220" height="4" rx="2" fill="var(--areia)"/>
+      </svg>
+      <svg class="folha" viewBox="0 0 220 330" aria-hidden="true">
+        <path d="M20,292 V110 A90,90 0 0 1 200,110 V292 Z" fill="var(--nevoa)"/>
+        <path d="M40,272 V112 A70,70 0 0 1 180,112 V272 Z" fill="none" stroke="rgba(36,23,19,.35)" stroke-width="2.5"/>
+        <g class="macaneta"><circle cx="187" cy="184" r="6.5" fill="var(--areia)" stroke="var(--marrom)" stroke-width="1.4"/><path d="M187,195.6 a2.6,2.6 0 0 1 1.2,4.9 l0.8,4.2 h-4 l0.8,-4.2 a2.6,2.6 0 0 1 1.2,-4.9z" fill="var(--areia)" stroke="var(--marrom)" stroke-width="1"/></g>
+        <image href="porta/chip.png" x="62.0" y="72" width="96" height="96"/>
+      </svg>
+    </div>
+    <div class="texto"><h2>Sobre mim</h2><p>Quem eu sou e como trabalho com inteligência artificial.</p></div>
+  </a>
 </nav>
-<footer><span>© 2026 Babi Noli</span><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></footer>
-</main>
+<footer><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></footer>
 </body>
 </html>
