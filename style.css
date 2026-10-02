@@ -23,6 +23,9 @@ p{margin:0 0 1rem}
 .topo .logo{width:7.5rem}
 .topo .voltar{font-size:.85rem;color:var(--oliva);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px}
 .topo .voltar:hover{color:var(--terracota)}
+/* Só o link "Início", na mesma posição das subpáginas, sem empurrar a abertura (página da música) */
+.pagina{position:relative}
+.topo-link{position:absolute;top:1.25rem;right:1.25rem;height:calc(.25rem + 7.5rem*356/1157 + 1.5rem)}
 
 /* Início */
 .abertura{text-align:center;padding:1.5rem 0 .5rem}
