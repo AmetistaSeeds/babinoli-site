@@ -71,6 +71,14 @@ body.design{background:#DDCAAE}
 .em-breve{text-align:center;margin:2rem 0 0}
 .em-breve a{font-size:.85rem;color:var(--oliva);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px}
 .em-breve a:hover{color:var(--terracota)}
+.contato a[href]{color:var(--terracota)}
+
+/* Texto e link para "Eu e a IA" na página da música */
+.sobre-music{margin-top:2.25rem}
+.link-ia{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--oliva);font-size:.9rem}
+.link-ia img{width:2.5rem;height:2.5rem;border-radius:8px}
+.link-ia span{border-bottom:1px solid currentColor;padding-bottom:1px}
+.link-ia:hover{color:var(--terracota)}
 
 /* Página Eu e a IA: fundo cinza-névoa, o tom dos temas de IA */
 body.ia{background:var(--nevoa)}
