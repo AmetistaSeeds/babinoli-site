@@ -17,6 +17,7 @@
 .entenda img{width:1.95rem;height:1.95rem;border-radius:6px;display:block}
 .entenda span{border-bottom:1px solid currentColor;padding-bottom:1px}
 .entenda:hover{color:#BF5723}
+@media (max-width:480px){.entenda{gap:.5rem;padding:.35rem .7rem .35rem .35rem;font-size:.62rem}.entenda img{width:1.6rem;height:1.6rem}}
 
 /* Página Eu e a IA: itens da legenda e dos exemplos começam com a escala */
 .escala-lista,.bloco .escala-lista{list-style:none;margin:0;padding:0}
