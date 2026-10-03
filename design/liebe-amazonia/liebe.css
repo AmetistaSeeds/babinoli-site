@@ -36,6 +36,12 @@ main.lenda h1{font-family:Lora,Georgia,serif;font-weight:600;font-size:2.4rem}
 /* Escala da IA na capa e caixinha "Entenda a escala" */
 .capa .escala-linha{justify-content:center;margin:-22px auto 34px}
 .lendas .entenda{margin-top:48px;background:rgba(255,255,255,.55)}
+/* Brasilidades: cartões verticais 4:5, ainda sem link */
+.brasilidades{padding-top:0}
+.linha-secao{font-family:Lora,Georgia,serif;font-size:1.05rem;color:var(--verde);margin-top:6px}
+.brasilidades .escala-linha{justify-content:center;margin:18px 0 0}
+.brasilidades .cartao img{aspect-ratio:4/5}
+.brasilidades .cartao:hover img{transform:none}
 .curiosidades p,.curiosidades li{font-family:Poppins,sans-serif;font-size:.92rem;line-height:1.65}
 .curiosidades p{margin-bottom:.9em}
 .curiosidades ul{margin:0 0 .9em 1.2em;padding:0}
