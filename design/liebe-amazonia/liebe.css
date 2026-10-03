@@ -32,7 +32,10 @@ main.lenda h1{font-family:Lora,Georgia,serif;font-weight:600;font-size:2.4rem}
 .texto{max-width:62ch}
 .texto p{font-family:Lora,Georgia,serif;font-size:1.08rem;line-height:1.75;margin-bottom:1.1em}
 .curiosidades{margin-top:2em;background:rgba(94,107,63,.09);border-left:3px solid var(--verde);border-radius:6px;padding:22px 24px}
-.curiosidades h2{font-family:Lora,Georgia,serif;font-weight:600;font-size:1.25rem;color:var(--verde);margin-bottom:12px}
+.curiosidades h2{font-family:Lora,Georgia,serif;font-weight:600;font-size:1.25rem;color:var(--verde);margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+/* Escala da IA na capa e caixinha "Entenda a escala" */
+.capa .escala-linha{justify-content:center;margin:-22px auto 34px}
+.lendas .entenda{margin-top:48px;background:rgba(255,255,255,.55)}
 .curiosidades p,.curiosidades li{font-family:Poppins,sans-serif;font-size:.92rem;line-height:1.65}
 .curiosidades p{margin-bottom:.9em}
 .curiosidades ul{margin:0 0 .9em 1.2em;padding:0}

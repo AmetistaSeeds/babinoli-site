@@ -73,12 +73,16 @@ body.design{background:#DDCAAE}
 .em-breve a:hover{color:var(--terracota)}
 .contato a[href]{color:var(--terracota)}
 
-/* Texto e link para "Eu e a IA" na página da música */
+/* Texto sobre a música na página da música */
 .sobre-music{margin-top:2.25rem}
-.link-ia{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--oliva);font-size:.9rem}
-.link-ia img{width:2.5rem;height:2.5rem;border-radius:8px}
-.link-ia span{border-bottom:1px solid currentColor;padding-bottom:1px}
-.link-ia:hover{color:var(--terracota)}
+
+/* Capa com legenda e escala (Meu Espaço Seguro) */
+.capa-fig{margin:0 0 1.5rem;width:min(100%,22rem)}
+.capa-fig .capa{margin-bottom:0}
+.na-largura-da-capa{width:min(100%,22rem);margin-bottom:1.5rem}
+.na-largura-da-capa p{margin:0}
+.depois-blocos{margin-top:1.5rem}
+.design .entenda{margin-left:auto;margin-right:auto}
 
 /* Página Eu e a IA: fundo cinza-névoa, o tom dos temas de IA */
 body.ia{background:var(--nevoa)}
@@ -91,7 +95,7 @@ body.ia html{background:var(--nevoa)}
 .bloco li{margin:.2rem 0}
 .bloco p:last-child{margin:0}
 .tag{display:inline-block;margin-top:1rem;font-weight:500;color:var(--oliva)}
-.video{width:min(100%,20rem);aspect-ratio:9/16;border-radius:12px;margin:1.5rem 0 0;background:var(--nevoa)}
+.video{width:min(100%,20rem);aspect-ratio:9/16;border-radius:12px;margin:1.5rem 0 0;background:var(--nevoa);box-shadow:0 12px 28px -16px rgba(36,23,19,.55)}
 
 footer{margin-top:3rem;font-size:.8rem;color:var(--oliva);display:flex;gap:1.25rem;flex-wrap:wrap}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
