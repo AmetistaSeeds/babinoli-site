@@ -1,4 +1,4 @@
-:root{--fundo:#F4EAD2;--verde:#5E6B3F;--urucum:#B4441A;--marrom:#241713;--marrom-suave:#5a4a42}
+:root{--fundo:#F4EAD2;--verde:#444D2D;--urucum:#B4441A;--marrom:#241713;--marrom-suave:#5a4a42}
 *{box-sizing:border-box;margin:0}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{background:var(--fundo);color:var(--marrom);font-family:Poppins,system-ui,sans-serif;padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -6,7 +6,7 @@ img{max-width:100%;height:auto}
 .topo{max-width:960px;margin:0 auto;padding:calc(22px + env(safe-area-inset-top,0px)) 24px 22px;display:flex;justify-content:space-between;align-items:center}
 .topo .logo img{width:118px;display:block}
 .topo nav a{color:var(--marrom-suave);font-size:.85rem}
-.grafismo{height:24px;background:url(img/faixa-grafismo.png) repeat-x center/auto 24px}
+.grafismo{--faixa:48px;height:var(--faixa);background:url(img/faixa-grafismo.svg) repeat-x center/auto var(--faixa)}
 .folhas{height:110px;background:url(img/faixa-folhas.png) repeat-x center/auto 110px}
 /* capa */
 .capa{text-align:center;padding:48px 20px 0}
@@ -31,7 +31,7 @@ main.lenda h1{font-family:Lora,Georgia,serif;font-weight:600;font-size:2.4rem}
 .guia{height:170px;width:auto;position:sticky;top:24px;justify-self:center}
 .texto{max-width:62ch}
 .texto p{font-family:Lora,Georgia,serif;font-size:1.08rem;line-height:1.75;margin-bottom:1.1em}
-.curiosidades{margin-top:2em;background:rgba(94,107,63,.09);border-left:3px solid var(--verde);border-radius:6px;padding:22px 24px}
+.curiosidades{margin-top:2em;background:rgba(68,77,45,.09);border-left:3px solid var(--verde);border-radius:6px;padding:22px 24px}
 .curiosidades h2{font-family:Lora,Georgia,serif;font-weight:600;font-size:1.25rem;color:var(--verde);margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:1rem}
 /* Escala da IA na capa e caixinha "Entenda a escala" */
 .capa .escala-linha{justify-content:center;margin:-22px auto 34px}
