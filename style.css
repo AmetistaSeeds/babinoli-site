@@ -97,5 +97,26 @@ body.ia html{background:var(--nevoa)}
 .tag{display:inline-block;margin-top:1rem;font-weight:500;color:var(--oliva)}
 .video{width:min(100%,20rem);aspect-ratio:1/1;border-radius:12px;margin:1.5rem 0 0;background:var(--nevoa);box-shadow:0 12px 28px -16px rgba(36,23,19,.55)}
 
+/* Clipe oficial (Meu Espaço Seguro) e destaque na Music */
+.clipe{margin-top:2.75rem;padding-top:1.75rem;border-top:1.5px solid rgba(36,23,19,.25)}
+.clipe h2{font-size:1.6rem;margin-bottom:1rem}
+.clipe-fig{margin:0 0 1.25rem}
+.clipe-capa{position:relative;display:block;border-radius:12px;overflow:hidden;box-shadow:0 14px 34px -16px rgba(36,23,19,.6)}
+.clipe-capa img{width:100%;transition:transform .5s ease}
+.clipe-capa:hover img{transform:scale(1.03)}
+.clipe-play{position:absolute;left:50%;top:50%;width:4.2rem;height:4.2rem;margin:-2.1rem 0 0 -2.1rem;border-radius:50%;background:rgba(36,23,19,.55);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.clipe-play::after{content:"";position:absolute;left:54%;top:50%;transform:translate(-50%,-50%);border-style:solid;border-width:.75rem 0 .75rem 1.2rem;border-color:transparent transparent transparent #fff}
+.clipe-capa:hover .clipe-play{background:rgba(191,87,35,.85)}
+.clipe .botao{margin-bottom:1.25rem}
+.teaser-titulo{font-size:1.15rem;margin:1.75rem 0 .75rem}
+.teaser{margin:0 0 1.5rem;width:min(100%,20rem)}
+.teaser video{width:100%;border-radius:12px;background:var(--marrom);box-shadow:0 12px 28px -16px rgba(36,23,19,.55)}
+.producao{font-size:.9rem;color:var(--oliva)}
+.producao a{color:var(--terracota)}
+.destaque-clipe{position:relative;display:block;margin-top:.9rem;border-radius:14px;overflow:hidden;aspect-ratio:16/9;text-decoration:none;box-shadow:0 12px 28px -14px rgba(36,23,19,.6)}
+.destaque-clipe img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.destaque-clipe:hover img{transform:scale(1.04)}
+.destaque-clipe .rotulo{position:absolute;left:0;right:0;bottom:0;padding:2.2rem .9rem .8rem;font-family:var(--serif);font-size:1.25rem;line-height:1.2;color:#fff;background:linear-gradient(to top,rgba(36,23,19,.8),rgba(36,23,19,0))}
+.destaque-clipe .rotulo small{display:block;font-family:var(--sans);font-size:.72rem;opacity:.9;margin-top:.15rem}
 footer{margin-top:3rem;font-size:.8rem;color:var(--oliva);display:flex;gap:1.25rem;flex-wrap:wrap}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}

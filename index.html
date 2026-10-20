@@ -28,7 +28,12 @@ nav{display:grid;grid-template-columns:repeat(3,minmax(0,220px));gap:clamp(24px,
 .caminho:focus-visible .porta{outline:3px solid var(--marrom);outline-offset:8px;border-radius:12px}
 .texto h2{font-family:Lora,Georgia,serif;font-weight:600;font-size:1.35rem;margin-top:18px;line-height:1.2}
 .texto p{font-size:.88rem;line-height:1.5;margin-top:8px;color:var(--marrom-suave);max-width:27ch;margin-inline:auto}
-footer{margin-top:48px;font-size:.78rem;display:flex;gap:22px}
+.semente{display:flex;align-items:center;gap:12px;margin-top:44px;padding:10px 18px 10px 12px;border-radius:999px;text-decoration:none;color:var(--marrom-suave);font-size:.85rem;transition:background .2s}
+.semente:hover,.semente:focus-visible{background:rgba(255,255,255,.55)}
+.semente img{width:auto;height:46px;display:block}
+.semente .nome-as{letter-spacing:.14em;font-weight:500;white-space:nowrap}
+.semente .am{color:#7A5DA0}.semente .sd{color:#3A6B45}
+footer{margin-top:28px;font-size:.78rem;display:flex;gap:22px}
 footer a{color:var(--marrom-suave)}
 @media (max-width:620px){
  nav{grid-template-columns:1fr;gap:28px;max-width:380px}
@@ -58,7 +63,7 @@ footer a{color:var(--marrom-suave)}
         <image href="porta/coracao.png" x="78.0" y="92" width="64" height="64"/>
       </svg>
     </div>
-    <div class="texto"><h2>Babi Noli Music</h2><p>Canções com letras minhas. A primeira sai em 16 de outubro.</p></div>
+    <div class="texto"><h2>Babi Noli Music</h2><p>Canções com letras minhas. A primeira, Meu Espaço Seguro, já saiu, com clipe.</p></div>
   </a>
   <a class="caminho design" href="design/">
     <div class="porta">
@@ -91,6 +96,10 @@ footer a{color:var(--marrom-suave)}
     <div class="texto"><h2>Sobre mim</h2><p>Quem eu sou e como trabalho com inteligência artificial.</p></div>
   </a>
 </nav>
+<a class="semente" href="https://ametistaseeds.com" rel="noopener">
+  <img src="img/ametista-seeds-simbolo.svg" alt="" width="38" height="46">
+  <span>Uma semente de <span class="nome-as"><span class="am">AMETISTA</span> <span class="sd">SEEDS</span></span></span>
+</a>
 <footer><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></footer>
 </body>
 </html>
