@@ -120,3 +120,10 @@ body.ia html{background:var(--nevoa)}
 .destaque-clipe .rotulo small{display:block;font-family:var(--sans);font-size:.72rem;opacity:.9;margin-top:.15rem}
 footer{margin-top:3rem;font-size:.8rem;color:var(--oliva);display:flex;gap:1.25rem;flex-wrap:wrap}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Seletor de idioma e nota de tradução no rodapé */
+.idiomas{display:flex;gap:.55rem;margin-left:auto}
+.idiomas a{text-decoration:none;letter-spacing:.04em}
+.idiomas a[aria-current]{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.traducao{opacity:.85}
+.nota-traducao{justify-content:flex-start;margin:1.6rem 0 0;font-style:italic;opacity:.9}
