@@ -1,5 +1,5 @@
 {
-  // Site Babi Noli — Cloudflare Workers + Static Assets (mesmo padrão do Tudukit)
+  // Site Babi Noli — Cloudflare Workers + Static Assets (mesmo padrão do Tudukit)  (ligado ao Workers Builds em 04/11/2026)
   "name": "babinoli-site",
   "main": "src/worker.js",
   "compatibility_date": "2026-11-04",
