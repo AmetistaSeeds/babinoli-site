@@ -1,0 +1,21 @@
+{
+  // Site Babi Noli — Cloudflare Workers + Static Assets (mesmo padrão do Tudukit)
+  "name": "babinoli-site",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-04",
+  "assets": {
+    // Os ficheiros do site ficam na raiz do repositório (assim o GitHub Pages continua a funcionar até a troca de DNS);
+    // o que não é site está listado em .assetsignore
+    "directory": "./",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"]
+  },
+  // Necessário para os builds de pré-visualização dos ramos que não são o main
+  "previews": {},
+  "vars": { "SITE_NAME": "babinoli.com", "FROM_ADDRESS": "formulario@babinoli.com", "HOSTS": "babinoli.com,www.babinoli.com,babinoli-site.ametistaseeds.workers.dev" },
+  // Formulário de contato → ametistaseeds@gmail.com (exige Email Routing ativo em babinoli.com e este destino verificado)
+  "send_email": [{ "name": "CONTACT_EMAIL", "destination_address": "ametistaseeds@gmail.com" }],
+  // Estatística anônima (contagens por dia), partilhada pelos três sites
+  "d1_databases": [{ "binding": "STATS", "database_name": "sites-stats", "database_id": "a5287dda-9dad-4be0-bd22-7a0490723a85" }]
+}

@@ -1,0 +1,12 @@
+.git
+.github
+src
+wrangler.jsonc
+.assetsignore
+.gitignore
+CNAME
+.nojekyll
+README.md
+node_modules
+.wrangler
+.DS_Store

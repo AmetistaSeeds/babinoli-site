@@ -6,3 +6,5 @@ originais/
 *.clip
 *.psd
 IMG_*.*
+.wrangler
+node_modules
