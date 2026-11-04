@@ -4,10 +4,11 @@
       Envia só: página vista, domínio de onde veio a visita, erros técnicos e alguns cliques (vídeo, streaming, apoio). */
 (function () {
   // ---- Doação (Ko-fi) ----
-  // Preencher com o link do Ko-fi (ex.: "https://ko-fi.com/ametistaseeds"). Enquanto estiver vazio,
-  // o botão NÃO aparece no site publicado; nas pré-visualizações (*.workers.dev) aparece desativado, só para ver o visual.
-  var SUPPORT_URL = "";
-  var BRAND = /babinoli/.test(location.hostname) ? "Babi Noli" : "Ametista Seeds";
+  // Cada semente tem a sua própria conta Ko-fi (decisão da Bárbara, 05/11/2026). Link vazio = o botão NÃO aparece
+  // no site publicado; nas pré-visualizações (*.workers.dev) aparece desativado, só para ver o visual.
+  var isBabi = /babinoli/.test(location.hostname);
+  var SUPPORT_URL = isBabi ? "https://ko-fi.com/babinoli" : ""; // Ametista Seeds: por decidir
+  var BRAND = isBabi ? "Babi Noli" : "Ametista Seeds";
   var SUPPORT_TXT = {
     pt: "Apoie a " + BRAND + " ☕",
     en: "Support " + BRAND + " ☕",
