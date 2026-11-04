@@ -6,7 +6,7 @@
 // Pré-visualizações não herdam os bindings: aí o formulário responde 503 e a estatística não grava (esperado).
 
 const TO_ADDRESS = "ametistaseeds@gmail.com";
-const EVENTS = ["contato-enviado", "play-video", "clique-streaming"];
+const EVENTS = ["contato-enviado", "play-video", "clique-streaming", "apoio-clique"];
 const BOT_UA = /bot|crawl|spider|slurp|preview|headless|lighthouse|monitor/i;
 const EMAIL_RE = /^[^\s@<>"]+@[^\s@<>"]+\.[^\s@<>"]+$/;
 
