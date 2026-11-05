@@ -132,3 +132,8 @@ footer{margin-top:3rem;font-size:.8rem;color:var(--oliva);display:flex;gap:1.25r
 .idiomas a[aria-current]{font-weight:700;text-decoration:underline;text-underline-offset:3px}
 .traducao{opacity:.85}
 .nota-traducao{justify-content:flex-start;margin:1.6rem 0 0;font-style:italic;opacity:.9}
+
+/* Bloco de apoio (Ko-fi) no fim das páginas de vertente */
+.apoio-bloco{margin:2.5rem 0 0;padding:1.25rem 1.25rem 1.4rem;border-radius:14px;background:rgba(255,255,255,.45);border:1px solid rgba(36,23,19,.12)}
+.apoio-bloco p{margin:0 0 1rem;line-height:1.55}
+.apoio-bloco p a{color:inherit}

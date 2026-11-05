@@ -32,7 +32,6 @@
     a.textContent = SUPPORT_TXT[lang] || SUPPORT_TXT.en;
     if (ok) {
       a.href = SUPPORT_URL; a.target = "_blank"; a.rel = "noopener";
-      a.addEventListener("click", function () { send("/api/ev", { p: location.pathname, e: "apoio-clique" }); });
     } else {
       a.href = "#"; a.title = "Pré-visualização: falta o link do Ko-fi";
       a.addEventListener("click", function (e) { e.preventDefault(); });
@@ -57,5 +56,6 @@
   document.addEventListener("click", function (e) {
     var a = e.target && e.target.closest && e.target.closest("a[href]");
     if (a && /spotify\.com|music\.apple\.com|music\.youtube\.com|music\.amazon\.|deezer\.com|tidal\.com|distrokid\.com/.test(a.href)) send("/api/ev", { p: location.pathname, e: "clique-streaming" });
+    if (a && /^https:\/\/ko-fi\.com\//.test(a.href)) send("/api/ev", { p: location.pathname, e: "apoio-clique" });
   }, true);
 })();
